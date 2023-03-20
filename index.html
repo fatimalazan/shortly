@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <title>Shortly</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <nav class="relative container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-20">
+                <img
+                    src="/images/logo.svg"
+                    alt=""
+                />
+                <div class="hidden text-grayishViolet font-bold lg:flex gap-8">
+                    <a
+                        href=""
+                        class="hover:text-veryDarkViolet">
+                            Features
+                    </a>
+                    <a
+                        href=""
+                        class="hover:text-veryDarkViolet">
+                            Pricing
+                    </a>
+                    <a
+                        href=""
+                        class="hover:text-veryDarkViolet">
+                            Resources
+                    </a>
+                </div>
+            </div>
+            <div class="hidden text-grayishViolet font-bold lg:flex items-center gap-6">
+                <a
+                    href=""
+                    class="hover:text-veryDarkViolet">
+                        Login
+                </a>
+                <a
+                    href=""
+                    class="px-8 py-3 bg-cyan text-white rounded-full hover:opacity-70">
+                        Sign Up
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container flex flex-col-reverse mx-auto mb-44 p-6 lg:flex-row">
+            <div class="flex flex-col gap-10 text-center lg:w-1/2 lg:text-left">
+                <h1 class="text-5xl font-bold lg:mt-16 lg:text-6xl">
+                    More than just shorter links
+                </h1>
+                <p class="text-2xl text-gray-400 lg:max-w-md">
+                    Build your brand's recognition and get detailed insights on how your links are performing.
+                </p>
+                <div>
+                    <a
+                        href=""
+                        class="py-5 px-10 bg-cyan text-2xl text-white font-bold rounded-full hover:opacity-70">
+                            Get Started
+                    </a>
+                </div>
+            </div>
+            <div class="mb-24 mx-auto md:w-180 lg:w-1/2 lg:mb-0">
+                <img
+                    src="/images/illustration-working.svg"
+                    alt=""
+                />
+            </div>
+        </div>
+    </section>
+    <section
+        d="shorten"
+        class="relative bg-gray-100"
+    >
+        <div class="max-w-4xl mx-auto p-6">
+            <form
+                class="relative flex flex-col gap-4 w-full p-10 -mt-20 bg-darkViolet rounded-lg md:flex-row"
+                id="link-form"
+            >
+                <input
+                    type="text"
+                    class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
+                    placeholder="Shorten a link here"
+                    id="link-input"
+                >
+                <button class="px-10 py-3 bg-cyan text-white rounded-lg hover:bg-cyanLight focus:outline-none">
+                    Shorten it!
+                </button>
+            </form>
+            <div class="flex flex-col items-center justify-between mt-6 p-6 w-full bg-white rounded-lg md:flex-row">
+                <p class="text-veryDarkViolet font-bold text-center md:text-left">
+                    https://frontendmentor.io
+                </p>
+                <div class="flex flex-col items-center justify-end gap-2 md:flex-row md:gap-4">
+                    <p class="text-cyan font-bold text-center md:text-left">
+                        https://rel.ink/k4IKyk
+                    </p>
+                    <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">
+                        Copy
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-between mt-6 p-6 w-full bg-white rounded-lg md:flex-row">
+                <p class="text-veryDarkViolet font-bold text-center md:text-left">
+                    https://twitter.com/frontendmentor
+                </p>
+                <div class="flex flex-col items-center justify-end gap-2 md:flex-row md:gap-4">
+                    <p class="text-cyan font-bold text-center md:text-left">
+                        https://rel.ink/gxOXp9
+                    </p>
+                    <button class="p-2 px-8 text-white bg-darkViolet rounded-lg hover:opacity-70 focus:outline-none">
+                        Copy
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-between mt-6 p-6 w-full bg-white rounded-lg md:flex-row">
+                <p class="text-veryDarkViolet font-bold text-center md:text-left">
+                    https://linkedin.com/frontend-mentor
+                </p>
+                <div class="flex flex-col items-center justify-end gap-2 md:flex-row md:gap-4">
+                    <p class="text-cyan font-bold text-center md:text-left">
+                        https://rel.ink/gob3X9
+                    </p>
+                    <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">
+                        Copy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
