@@ -36,11 +36,15 @@ function formSubmit(e) {
     errMsg.innerHTML = 'Please enter something';
     successMsg.innerHTML = '';
     input.classList.add('border-red');
+    input.classList.remove('border-green-600');
   } else if (!validURL(input.value)) {
     errMsg.innerHTML = 'Please enter a valid URL';
     successMsg.innerHTML = '';
+    input.classList.add('border-red');
+    input.classList.remove('border-green-600');
   } else {
     errMsg.innerHTML = '';
     successMsg.innerHTML = 'URL is Valid';
+    input.classList.add('border-green-600');
   }
 }
